@@ -1,0 +1,218 @@
+/* Container utama */
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+}
+
+/* Judul */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #34495e;
+}
+
+/* Form pencarian */
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Dropdown dan button */
+.select-input {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  min-width: 140px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.select-input:hover,
+.select-input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* Tombol Cari */
+.btn-primary {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+}
+
+.btn-primary:hover {
+  background-color: #217dbb;
+}
+
+/* Container hasil pencarian */
+.results-container {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* Judul hasil pencarian */
+h1.results-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #34495e;
+}
+
+.destination {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease;
+  text-align: center; /* gambar dan teks rata tengah */
+}
+
+.destination:hover {
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Judul destinasi */
+.destination h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #7b3ff7;
+}
+
+/* Link judul */
+.destination h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.destination h3 a:hover {
+  text-decoration: underline;
+}
+
+.destination img {
+  max-width: 500px; /* ukuran gambar lebih besar */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Detail destinasi */
+.destination p {
+  font-size: 1rem;
+  margin: 4px 0;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 18px 0;
+  border-top: 1px solid #ddd;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.destination {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dest-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.booking-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.booking-form button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #217dbb;
+}
+
+.btn-pesan {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-pesan:hover {
+  background-color: #217dbb;
+}

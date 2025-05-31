@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TravelEase - Cari Destinasi Wisata</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TravelEase - Cari Destinasi Wisata</h1>
+      <form
+        id="searchForm"
+        class="search-form"
+        action="results.html"
+        method="GET"
+      >
+        <select name="location" id="location" class="select-input">
+          <!-- Opsi Lokasi akan diisi otomatis oleh JS -->
+        </select>
+
+        <select name="category" id="category" class="select-input">
+          <!-- Opsi Kategori akan diisi otomatis oleh JS -->
+        </select>
+
+        <select name="minRating" id="minRating" class="select-input">
+          <option value="">Rating Minimal</option>
+          <option value="1.0">1.0+</option>
+          <option value="1.5">1.5+</option>
+          <option value="2.0">2.0+</option>
+          <option value="2.5">2.5+</option>
+          <option value="3.0">3.0+</option>
+          <option value="3.5">3.5+</option>
+          <option value="4.0">4.0+</option>
+          <option value="4.5">4.5+</option>
+          <option value="5.0">5.0</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Cari</button>
+      </form>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

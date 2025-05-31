@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - TravelEase</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-box {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: 320px;
+        box-sizing: border-box;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #3498db;
+        font-weight: 700;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #333;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 18px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        flex: 1;
+        margin: 0 5px;
+        transition: background-color 0.3s ease;
+      }
+      .cancel-btn {
+        background-color: #e74c3c;
+      }
+      .cancel-btn:hover {
+        background-color: #c0392b;
+      }
+      .login-btn {
+        background-color: #27ae60;
+      }
+      .login-btn:hover {
+        background-color: #1e8449;
+      }
+      .error-msg {
+        color: #e74c3c;
+        font-weight: 600;
+        margin-top: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">E-mail atau Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Masukkan e-mail atau username"
+          required
+          autocomplete="username"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Masukkan password"
+          required
+          autocomplete="current-password"
+        />
+        <div class="buttons">
+          <button type="button" id="cancelBtn" class="cancel-btn">
+            Cancel
+          </button>
+          <button type="submit" class="login-btn">Login</button>
+        </div>
+        <p id="errorMsg" class="error-msg"></p>
+      </form>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script>
+      document.getElementById("cancelBtn").addEventListener("click", () => {
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("errorMsg").textContent = "";
+        document.getElementById("username").focus();
+      });
+    </script>
+  </body>
+</html>
